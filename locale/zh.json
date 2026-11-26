@@ -1,0 +1,7 @@
+{
+  "meta": {
+    "title": "浮岛栏",
+    "description": "把左栏全部入口收进一个可拖拽的玻璃浮岛；面板走 sidebar.panellist 注册表，与原生界面和壁纸引擎共存。",
+    "detail": "README.md"
+  }
+}

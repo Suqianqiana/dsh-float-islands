@@ -1,0 +1,7 @@
+{
+  "meta": {
+    "title": "Float Islands",
+    "description": "Collect every left-sidebar entry into one draggable glass island. Panels come from the sidebar.panellist registry, so the native UI and wallpaper engines keep working.",
+    "detail": "README.en.md"
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "name": "dsh-float-islands",
+  "version": "1.3.0",
+  "private": false,
+  "description": "浮岛栏 Float Islands：把左栏全部入口收进一个可拖拽的玻璃浮岛，面板走 sidebar.panellist 注册表，与原生界面和壁纸引擎共存。",
+  "type": "module",
+  "license": "MIT",
+  "author": "Suqianqiana",
+  "icon": "./icon.svg",
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "sidebar",
+    "dock",
+    "island",
+    "launcher",
+    "ui"
+  ],
+  "homepage": "https://github.com/Suqianqiana/dsh-float-islands#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Suqianqiana/dsh-float-islands.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Suqianqiana/dsh-float-islands/issues"
+  },
+  "scripts": {
+    "check": "node --check client.js && node --check index.js && node --check scripts/rename.mjs",
+    "test": "node --test test/island.test.mjs test/resilience.test.mjs test/prefs.test.mjs"
+  },
+  "devDependencies": {
+    "jsdom": "^31.0.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "engines": {
+    "node": ">=20",
+    "dsh": ">=0.2.2-rc.5"
+  },
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "README.md",
+    "README.en.md",
+    "LICENSE",
+    "docs/*.png"
+  ],
+  "dsh": {
+    "manifestVersion": 1,
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-slots"
+      ]
+    }
+  }
+}

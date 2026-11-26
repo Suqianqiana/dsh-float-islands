@@ -1,0 +1,19 @@
+# Node
+node_modules/
+*.log
+npm-debug.log*
+
+# Editor / OS
+.DS_Store
+Thumbs.db
+*.swp
+.vscode/
+.idea/
+
+# Build / temp
+dist/
+*.tgz
+*.tmp
+
+# 内部交接文档，不公开
+HANDOFF.md
