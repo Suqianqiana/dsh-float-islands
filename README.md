@@ -45,7 +45,7 @@ dsh --profile web plugin add link:<本目录绝对路径>
 设置 → 插件市场（Discover）→ 索引 → 添加这个地址，然后在列表里点安装：
 
 ```
-https://cdn.jsdelivr.net/gh/Suqianqiana/dsh-float-islands@v1.3.0/market/index.json
+https://cdn.jsdelivr.net/gh/Suqianqiana/dsh-float-islands@main/market/index.json
 ```
 
 > 修改 `client.js` 后刷新页面即可；修改 `package.json` 里的 `dsh.client` 声明需要完全重启 DSH。

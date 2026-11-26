@@ -37,7 +37,7 @@ Collect every left-sidebar entry of DeepSeek Harness into one draggable glass is
 3. **Market index** — add this URL under Settings → plugin market (Discover) → indexes, then install from the list:
 
    ```
-   https://cdn.jsdelivr.net/gh/Suqianqiana/dsh-float-islands@v1.3.0/market/index.json
+   https://cdn.jsdelivr.net/gh/Suqianqiana/dsh-float-islands@main/market/index.json
    ```
 
 > Editing `client.js` only needs a page refresh. Editing the `dsh.client` manifest in `package.json` needs a full DSH restart.
